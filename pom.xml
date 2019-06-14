@@ -119,11 +119,11 @@
                         <groupId>io.fabric8</groupId>
                         <artifactId>fabric8-maven-plugin</artifactId>
                         <version>${fabric8-maven-plugin.version}</version>
-                        <!-- add a compose image
-                        <configuration>
-                                <composeFile>path for docker compose file</composeFile>
-                        </configuration>
-                        -->
+                        <!-- add a compose image -->
+<!--                        <configuration>-->
+<!--                            <composeFile>keycloak-postgres</composeFile>-->
+<!--                        </configuration>-->
+
                         <executions>
                             <execution>
                                 <id>fmp</id>
