@@ -123,6 +123,21 @@
 <!--                        <configuration>-->
 <!--                            <composeFile>keycloak-postgres</composeFile>-->
 <!--                        </configuration>-->
+                        <configuration>
+                            <mode>openshift</mode>
+                            <buildStrategy>docker</buildStrategy>
+                            <verbose>true</verbose>
+                            <images>
+                                <image>
+                                    <!-- @see https://dmp.fabric8.io/#image-name -->
+                                    <name>%g/%a:%t</name>
+                                    <alias>%a</alias>
+                                    <build>
+                                        <dockerFileDir>./docker/</dockerFileDir>
+                                    </build>
+                                </image>
+                            </images>
+                        </configuration>
 
                         <executions>
                             <execution>
