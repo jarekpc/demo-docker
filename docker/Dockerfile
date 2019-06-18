@@ -1,5 +1,5 @@
 FROM jboss/keycloak
-EXPOSE 8080:8080
+EXPOSE 8081:8080
 
 #FROM jboss/base-jdk:8
 #MAINTAINER Hector Fernandez <hfernand@redhat.com>
